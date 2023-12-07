@@ -1,0 +1,32 @@
+
+Pull GitHub on Kali Linux or any other OS system
+
+cd ~/Desktop
+pwd
+ls
+cd “New Folder”
+to back cd ..
+git clone https://github.com/nini4974/a-Weather-App.git  (clone gitHub repository)
+git a-Weather-App (navigate into the cloned repository)
+git remote -v (to verify the remote origin)
+git pull origin master (pull latest changes) master suppose to be branch name        OR
+git pull origin main (pulling latest changes/this one works for me)
+code . (to open current folder on vs code)
+
+
+
+
+
+Push Github on Kali Linux or any other OS system
+
+cd /path/to/your/repository (navigate to your project repository)
+git status (check status)
+git add . (add the changes to the staging area) The dot (.) adds all changes. You can replace it with specific file names if you want to stage only specific changes.
+git add index.html style.css app.js
+git commit -m updated index.html (commit the changes)
+git commit -m “Summary line” -m “Description line 1” -m “Description line 2”
+git push origin master (push the changes to gitHub repository)                                                 OR
+  If this is your first time pushing, you may need to set the upstream branch:
+git push -u origin master
+git push (subsequent pushes)
+
